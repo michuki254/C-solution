@@ -1,0 +1,78 @@
+using System;
+
+namespace Exercice02
+{
+    public class Class1
+    {
+        private static String[] a = { "Zero", "One", "Two", "Three",
+    "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven",
+    "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen",
+    "Seventeen", "Eighteen", "Nineteen" };
+        private static String[] b = { "", "", "Twenty", "Thirty", "Forty",
+    "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };
+        private static String[] c = { "Hundred", "Thousand", "Milloin" };
+
+     public static String Numberinword(int i)
+        {
+            if (i < 20)
+            {
+                return a[i];
+            }
+            if (i == 20)
+            {
+                return b[2];
+            }
+
+            if (i > 20)
+            {
+                return b[i / 10] + a[i / 10 ];
+            }
+
+            if (i == 30)
+            {
+                return b[3];
+            }
+
+            if (i > 30)
+            {
+                return b[i / 10] + a[i / 10];
+            }
+            if (i == 40)
+            {
+                return b[4];
+            }
+
+            if (i > 40)
+            {
+                return b[i / 10] + a[i / 10];
+            }
+            if (i == 50)
+            {
+                return b[5];
+            }
+
+            if (i > 50)
+            {
+                return b[i / 10] + a[i / 10];
+            }
+
+            if (i == 100)
+            {
+                return c[i];
+            }
+
+            if (i > 100)
+            {
+                //
+            }
+
+
+
+        }
+
+    }
+
+    
+
+
+}
