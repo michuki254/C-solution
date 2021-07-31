@@ -1,0 +1,33 @@
+using System;
+using System.Text.RegularExpressions;
+
+
+namespace Exercise01
+{
+
+   
+    class Program
+    {
+
+        private static void Match(string text, string expr)
+        {
+            Console.WriteLine("The Expression: " + expr);
+            MatchCollection mc = Regex.Matches(text, expr);
+
+            foreach (Match m in mc)
+            {
+
+                Console.WriteLine(m);
+            }
+        }
+        static void Main(string[] args)
+        {
+
+            string str = "";
+
+            Console.WriteLine("Matching words Word: ");
+            Match(str, "^[a-z]+$?");
+            Console.ReadKey();
+        }
+    }
+}
